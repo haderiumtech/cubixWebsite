@@ -107,4 +107,13 @@ public class CubixWebsiteTestCases {
 
 	}
 
+	@Test(priority = 4)
+	public void verifyCareerForm() {
+
+		test = extent.createTest("Career form submission");
+		// base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
+		base.forClick(CWxpath.CWApplyNowCareer);
+
+	}
+
 }
