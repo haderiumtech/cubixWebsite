@@ -37,6 +37,7 @@ public class XpathClass {
 	public final String CWCookieAcceptBtn = "//button/span[contains(text(),'Accept All')]";
 
 	public final String CWThankyouPage = "//h2[contains(text(),'Thank you.')]";
+<<<<<<< HEAD
 	public final String CWThankyouPageValue = "Thank you.";
 
 	// career page xpaths
@@ -51,4 +52,17 @@ public class XpathClass {
 	public final String CWCareerResume = "//textarea[@id='description']";
 	public final String CWCareerSend = "//button[contains(text(),'Send Message')]";
 
+=======
+	//public final String CWThankyouPageValue = "Thank you.";
+	
+	//Blog page
+	public final String CWBlogUrl = "https://www.cubix.co/blog/";
+	public final String CWBlogSearch = "//input[@id='default-search']";
+	public final String CWBlogSearchBtn = "//button[contains(text(),'Search')]";
+	public final String CWBlogSearchValue = "How Generative AI Can Help Build a Sustainable Future?";
+	public final String CWBlogSearchResult = "//h3[contains(text(),'How Generative AI Can Help Build a Sustainable Future?')]";
+	public final String CWBlogSearchResultValue = "How Generative AI Can Help Build a Sustainable Future?";
+	public final String CWBlogFooter = "//p[contains(text(),'© 2024 Cubix. All Rights Reserved.')]";
+	
+>>>>>>> humaid
 }

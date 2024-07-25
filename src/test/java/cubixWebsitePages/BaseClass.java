@@ -312,6 +312,15 @@ public class BaseClass {
 		Select dropdown = new Select(dropdownElement);
 		dropdown.selectByIndex(index);
 	}
+	
+	public void scrollToPageEnd() { 
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+	}
+	
+	public void scrollToElement(String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		js.executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element);
+	}
 
 	public void deleteOldScreenshots() {
 		String screenshotsDirPath = System.getProperty("user.dir") + "/Screenshots";
