@@ -37,6 +37,14 @@ public class XpathClass {
 	public final String CWCookieAcceptBtn = "//button/span[contains(text(),'Accept All')]";
 
 	public final String CWThankyouPage = "//h2[contains(text(),'Thank you.')]";
-	public final String CWThankyouPageValue = "Thank you.";
-
+	public final String CWThankyouPageValue = "Thank yo";
+	
+	//Blog page
+	public final String CWBlogUrl = "https://www.cubix.co/blog/";
+	public final String CWBlogSearch = "//input[@id='default-search']";
+	public final String CWBlogSearchBtn = "//button[contains(text(),'Search')]";
+	public final String CWBlogSearchValue = "The Future of Generative AI – Possibilities and Challenges";
+	public final String CWBlogSearchResult = "//h3[contains(text(),'The Future of Generative AI – Possibilities and Challenges')]";
+	public final String CWBlogSearchResultValue = "The Future of Generative AI – Possibilities and Challenges";
+	
 }

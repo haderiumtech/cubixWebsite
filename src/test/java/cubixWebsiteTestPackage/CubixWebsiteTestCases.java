@@ -106,5 +106,17 @@ public class CubixWebsiteTestCases {
 		base.verifyCurrentUrl(base.getUrl(), CWxpath.CWProjectThankYouUrl);
 
 	}
+	
+	@Test(priority = 4)
+	public void searchFunctionality() {
+		
+		test = extent.createTest("Got a project form submission");
+		base.gotoUrl(CWxpath.CWBlogUrl);
+		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
+		base.sendKeys(CWxpath.CWBlogSearch, CWxpath.CWBlogSearchValue);
+		base.forClick(CWxpath.CWBlogSearchBtn);
+		base.verifyText(base.getText(CWxpath.CWBlogSearchResult), CWxpath.CWBlogSearchResultValue);
+		
+	}
 
 }

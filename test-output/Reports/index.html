@@ -55,7 +55,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jul 25, 2024 05:08:29 PM</span>
+                    <span class="badge badge-primary">Jul 25, 2024 06:07:59 PM</span>
                 </a>
             </li>
         </ul>
@@ -100,8 +100,8 @@
                                             <i class="fa fa-exclamation-circle"></i>
                                         </a>
                                         <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-                                            <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-	                                        
+                                            
+	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 	                                        
 	                                        
 	                                        
@@ -114,28 +114,28 @@
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-                                    <li class="test-item"  status="pass" test-id="1"
+                                    <li class="test-item"  status="fail" test-id="1"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
                                                 <p class="name">Contact Page form submission</p> 
-                                                <p class="duration text-sm">0h 1m 2s+61ms</p> 
-                                                <span class="datetime">17:08:56 PM</span>
+                                                <p class="duration text-sm">0h 0m 32s+146ms</p> 
+                                                <span class="datetime">18:08:01 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">Contact Page form submission</h5>
-                                                        <span class='badge badge-success'>07.25.2024 17:08:56</span>
-                                                        <span class='badge badge-danger'>07.25.2024 17:09:58</span>
-                                                        <span class='badge badge-default'>0h 1m 2s+61ms</span>
+                                                        <h5 class="test-status text-fail">Contact Page form submission</h5>
+                                                        <span class='badge badge-success'>07.25.2024 18:08:01</span>
+                                                        <span class='badge badge-danger'>07.25.2024 18:08:33</span>
+                                                        <span class='badge badge-default'>0h 0m 32s+146ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -151,14 +151,36 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>5:09:58 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>6:08:33 PM</td>
 				<td>
-						Test Case Passed is verifyContactPage
+						Test Case Failed is verifyContactPage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>6:08:33 PM</td>
+				<td>
+						Test Case Failed is java.lang.AssertionError: expected [Thank you.] but found [Thank yo]
 				</td>
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="C:\Users\Humaid Ahmed Khan\eclipse-workspace\cubixWebsite/Screenshots/verifyContactPage20240725060833.png" data-featherlight="image">
+				<div class="file-icon">
+					<i class="fa fa-file-image-o"></i> 
+				</div>
+				<div class="file-info">
+					<span class="file-name">verifyContactPage20240725060833.png</span>
+					<span class="file-size"> 66,540Kb</span>
+				</div>
+			</a>
+		</li>
+	</ul>
 </div>
                                         </div>
                                     </li>
