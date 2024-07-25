@@ -53,7 +53,7 @@ public class XpathClass {
 	public final String CWCareerSend = "//button[contains(text(),'Send Message')]";
 
 =======
-	//public final String CWThankyouPageValue = "Thank you.";
+	public final String CWThankyouPageValue = "Thank yo";
 	
 	//Blog page
 	public final String CWBlogUrl = "https://www.cubix.co/blog/";
