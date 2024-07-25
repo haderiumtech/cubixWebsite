@@ -20,7 +20,7 @@ public class XpathClass {
 	public final String CWcontactmessagevalue = "Test email, please ignore!";
 
 	// Got A Project? Pane
-	public final String CWproject = "//button/span[contains(text(),'Get Pricing')]";
+	public final String CWproject = "//button/span[contains(text(),'Get in touch')]";
 	public final String CWprojectname = "//input[@id='name']";
 	public final String CWprojectemail = "//input[@id='email']";
 	public final String CWprojectnumber = "//input[@id='number']";

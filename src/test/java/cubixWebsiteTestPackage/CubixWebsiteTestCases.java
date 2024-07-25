@@ -73,17 +73,20 @@ public class CubixWebsiteTestCases {
 	}
 
 	@Test(priority = 2)
-	public void verifyContactPage() {
+	public void verifyContactPage() throws InterruptedException {
 
 		test = extent.createTest("Contact Page form submission");
 		base.gotoUrl(CWxpath.CWContacturl);
+		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
 		base.sendKeys(CWxpath.CWcontactname, CWxpath.CWcontactnamevalue);
 		base.sendKeys(CWxpath.CWcontactemail, CWxpath.CWcontactemailvalue);
 		base.sendKeys(CWxpath.CWcontactnumber, CWxpath.CWcontactnumbervalue);
 		base.sendKeys(CWxpath.CWcontactmessage, CWxpath.CWcontactmessagevalue);
+
 		base.forClick(CWxpath.CWcontactSubmitBtn);
-//		base.verifyText(base.getText(CWxpath.CWThankyouPage), CWxpath.CWThankyouPageValue);
-//		base.verifyCurrentUrl(base.getUrl(), CWxpath.CWProjectThankYouUrl);
+
+		base.verifyText(base.getText(CWxpath.CWThankyouPage), CWxpath.CWThankyouPageValue);
+		base.verifyCurrentUrl(base.getUrl(), CWxpath.CWProjectThankYouUrl);
 
 	}
 
