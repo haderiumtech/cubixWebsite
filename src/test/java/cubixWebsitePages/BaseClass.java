@@ -317,9 +317,10 @@ public class BaseClass {
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 	}
 	
-	public void scrollToElement(String locator) {
-		WebElement element = driver.findElement(By.xpath(locator));
-		js.executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element);
+	public void scrollToElement() {
+		//WebElement element = driver.findElement(By.xpath(locator));
+		//js.executeScript("arguments[0].scrollIntoView(true);", element);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight * 2 / 3);");
 	}
 
 	public void deleteOldScreenshots() {

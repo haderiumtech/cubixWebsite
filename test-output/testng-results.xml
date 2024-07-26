@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -20,6 +21,74 @@
           </reporter-output>
         </test-method> <!-- verifyCareerForm -->
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@68ed96ca]" started-at="2024-07-26T12:27:34 PKT" name="tearDown" finished-at="2024-07-26T12:27:34 PKT" duration-ms="566" status="PASS">
+=======
+<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-26T12:36:48 PKT" name="Default suite" finished-at="2024-07-26T12:37:08 PKT" duration-ms="19618">
+    <groups>
+    </groups>
+    <test started-at="2024-07-26T12:36:48 PKT" name="Default test" finished-at="2024-07-26T12:37:08 PKT" duration-ms="19618">
+      <class name="cubixWebsiteTestPackage.CubixWebsiteTestCases">
+        <test-method is-config="true" signature="startChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T12:36:48 PKT" name="startChrome" finished-at="2024-07-26T12:36:48 PKT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startChrome -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T12:36:49 PKT" name="setup" finished-at="2024-07-26T12:36:51 PKT" duration-ms="2777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T12:36:51 PKT" name="searchFunctionality" finished-at="2024-07-26T12:37:07 PKT" duration-ms="15546" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [How Generative AI Can Help Build a Sustainable Future?] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [How Generative AI Can Help Build a Sustainable Future?] but found []
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at cubixWebsitePages.BaseClass.verifyText(BaseClass.java:248)
+at cubixWebsiteTestPackage.CubixWebsiteTestCases.searchFunctionality(CubixWebsiteTestCases.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFunctionality -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T12:37:07 PKT" name="tearDown" finished-at="2024-07-26T12:37:08 PKT" duration-ms="950" status="PASS">
+>>>>>>> 0e42df558299b67b7ba370cc97155d35baedd8c4
           <params>
             <param index="0">
               <value>
@@ -30,7 +99,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="CloseChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@68ed96ca]" started-at="2024-07-26T12:27:34 PKT" name="CloseChrome" finished-at="2024-07-26T12:27:35 PKT" duration-ms="628" status="PASS">
+=======
+        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T12:37:08 PKT" name="CloseChrome" finished-at="2024-07-26T12:37:08 PKT" duration-ms="116" status="PASS">
+>>>>>>> 0e42df558299b67b7ba370cc97155d35baedd8c4
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseChrome -->
