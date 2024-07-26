@@ -115,9 +115,7 @@ public class CubixWebsiteTestCases {
 		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
 		// base.waitUntilDisplayed(CWxpath.CWBlogSearch);
 		base.sendKeys(CWxpath.CWBlogSearch, CWxpath.CWBlogSearchValue);
-
 		base.forClick(CWxpath.CWBlogSearchBtn);
-
 		// base.waitUntilDisplayed(CWxpath.CWBlogFooter);
 		base.scrollToPageEnd();
 		base.scrollToElement();
