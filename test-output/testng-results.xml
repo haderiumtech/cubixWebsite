@@ -2,6 +2,7 @@
 <testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-07-26T15:04:18 PKT" name="Default suite" finished-at="2024-07-26T15:04:35 PKT" duration-ms="17166">
     <groups>
     </groups>
@@ -28,6 +29,28 @@ How Generative AI Can Help Build a Sustainable Future?] but found []]]>
 .
 7 Jun, 2024
 How Generative AI Can Help Build a Sustainable Future?] but found []
+=======
+  <suite started-at="2024-07-26T15:30:46 PKT" name="Default suite" finished-at="2024-07-26T15:31:44 PKT" duration-ms="57797">
+    <groups>
+    </groups>
+    <test started-at="2024-07-26T15:30:46 PKT" name="Default test" finished-at="2024-07-26T15:31:44 PKT" duration-ms="57797">
+      <class name="cubixWebsiteTestPackage.CubixWebsiteTestCases">
+        <test-method is-config="true" signature="startChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@4d157787]" started-at="2024-07-26T15:30:46 PKT" name="startChrome" finished-at="2024-07-26T15:30:47 PKT" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startChrome -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@4d157787]" started-at="2024-07-26T15:30:47 PKT" name="setup" finished-at="2024-07-26T15:30:52 PKT" duration-ms="5736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@4d157787]" started-at="2024-07-26T15:30:52 PKT" name="searchFunctionality" finished-at="2024-07-26T15:31:42 PKT" duration-ms="49653" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [How to Integrate ChatGPT into Your Business] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [How to Integrate ChatGPT into Your Business] but found []
+>>>>>>> 222b0a554692513df89506afb49e7f259589d714
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -70,18 +93,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchFunctionality -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T15:04:34 PKT" name="tearDown" finished-at="2024-07-26T15:04:34 PKT" duration-ms="865" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=searchFunctionality status=FAILURE method=CubixWebsiteTestCases.searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@4d157787]" started-at="2024-07-26T15:31:42 PKT" name="tearDown" finished-at="2024-07-26T15:31:43 PKT" duration-ms="1006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchFunctionality status=FAILURE method=CubixWebsiteTestCases.searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@4d157787] output={null}]]]>
+>>>>>>> 222b0a554692513df89506afb49e7f259589d714
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="CloseChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T15:04:34 PKT" name="CloseChrome" finished-at="2024-07-26T15:04:35 PKT" duration-ms="495" status="PASS">
+=======
+        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@4d157787]" started-at="2024-07-26T15:31:43 PKT" name="CloseChrome" finished-at="2024-07-26T15:31:44 PKT" duration-ms="1093" status="PASS">
+>>>>>>> 222b0a554692513df89506afb49e7f259589d714
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseChrome -->
