@@ -56,7 +56,7 @@ public class XpathClass {
 
 	// Blog post page
 	public final String CWBlogPostUrl = "https://www.cubix.co/blog/the-future-of-generative-ai/";
-	public final String CWPostTitle = "The Future of Generative AI | CubixBlogs";
+	public final String CWPostTitle = "The Future of Generative AI | Cubix Blogs";
 
 
 }
