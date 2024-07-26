@@ -1,84 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-26T14:20:09 PKT" name="Default suite" finished-at="2024-07-26T14:22:19 PKT" duration-ms="129270">
+  <suite started-at="2024-07-26T15:04:18 PKT" name="Default suite" finished-at="2024-07-26T15:04:35 PKT" duration-ms="17166">
     <groups>
     </groups>
-    <test started-at="2024-07-26T14:20:09 PKT" name="Default test" finished-at="2024-07-26T14:22:19 PKT" duration-ms="129270">
+    <test started-at="2024-07-26T15:04:18 PKT" name="Default test" finished-at="2024-07-26T15:04:35 PKT" duration-ms="17166">
       <class name="cubixWebsiteTestPackage.CubixWebsiteTestCases">
-        <test-method is-config="true" signature="startChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:20:09 PKT" name="startChrome" finished-at="2024-07-26T14:20:10 PKT" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="startChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T15:04:18 PKT" name="startChrome" finished-at="2024-07-26T15:04:18 PKT" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChrome -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:20:10 PKT" name="setup" finished-at="2024-07-26T14:20:10 PKT" duration-ms="607" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T15:04:18 PKT" name="setup" finished-at="2024-07-26T15:04:20 PKT" duration-ms="1680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyHomepage()[pri:1, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:20:10 PKT" name="verifyHomepage" finished-at="2024-07-26T14:20:46 PKT" duration-ms="35843" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomepage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:20:46 PKT" name="tearDown" finished-at="2024-07-26T14:20:47 PKT" duration-ms="516" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHomepage status=SUCCESS method=CubixWebsiteTestCases.verifyHomepage()[pri:1, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:20:47 PKT" name="setup" finished-at="2024-07-26T14:20:48 PKT" duration-ms="1641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyContactPage()[pri:2, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:20:48 PKT" name="verifyContactPage" finished-at="2024-07-26T14:21:10 PKT" duration-ms="22146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactPage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:10 PKT" name="tearDown" finished-at="2024-07-26T14:21:11 PKT" duration-ms="116" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyContactPage status=SUCCESS method=CubixWebsiteTestCases.verifyContactPage()[pri:2, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:11 PKT" name="setup" finished-at="2024-07-26T14:21:11 PKT" duration-ms="808" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyProjectForm()[pri:3, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:11 PKT" name="verifyProjectForm" finished-at="2024-07-26T14:21:25 PKT" duration-ms="13411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProjectForm -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:25 PKT" name="tearDown" finished-at="2024-07-26T14:21:25 PKT" duration-ms="118" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyProjectForm status=SUCCESS method=CubixWebsiteTestCases.verifyProjectForm()[pri:3, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:25 PKT" name="setup" finished-at="2024-07-26T14:21:25 PKT" duration-ms="561" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:25 PKT" name="searchFunctionality" finished-at="2024-07-26T14:21:37 PKT" duration-ms="11679" status="FAIL">
+        <test-method signature="searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T15:04:20 PKT" name="searchFunctionality" finished-at="2024-07-26T15:04:34 PKT" duration-ms="13904" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [How Generative AI Can Help Build a Sustainable Future?] but found [Artificial Intelligence]]]>
+              <![CDATA[expected [Artificial Intelligence
+.
+7 Jun, 2024
+How Generative AI Can Help Build a Sustainable Future?] but found []]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [How Generative AI Can Help Build a Sustainable Future?] but found [Artificial Intelligence]
+              <![CDATA[java.lang.AssertionError: expected [Artificial Intelligence
+.
+7 Jun, 2024
+How Generative AI Can Help Build a Sustainable Future?] but found []
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -86,7 +35,7 @@ at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
 at cubixWebsitePages.BaseClass.verifyText(BaseClass.java:248)
-at cubixWebsiteTestPackage.CubixWebsiteTestCases.searchFunctionality(CubixWebsiteTestCases.java:125)
+at cubixWebsiteTestPackage.CubixWebsiteTestCases.searchFunctionality(CubixWebsiteTestCases.java:126)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,37 +70,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchFunctionality -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:37 PKT" name="tearDown" finished-at="2024-07-26T14:21:38 PKT" duration-ms="807" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T15:04:34 PKT" name="tearDown" finished-at="2024-07-26T15:04:34 PKT" duration-ms="865" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchFunctionality status=FAILURE method=CubixWebsiteTestCases.searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3] output={null}]]]>
+                <![CDATA[[TestResult name=searchFunctionality status=FAILURE method=CubixWebsiteTestCases.searchFunctionality()[pri:4, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:38 PKT" name="setup" finished-at="2024-07-26T14:21:39 PKT" duration-ms="1283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyCareerForm()[pri:5, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:21:39 PKT" name="verifyCareerForm" finished-at="2024-07-26T14:22:18 PKT" duration-ms="39251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCareerForm -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:22:18 PKT" name="tearDown" finished-at="2024-07-26T14:22:19 PKT" duration-ms="85" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCareerForm status=SUCCESS method=CubixWebsiteTestCases.verifyCareerForm()[pri:5, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@3bc735b3]" started-at="2024-07-26T14:22:19 PKT" name="CloseChrome" finished-at="2024-07-26T14:22:19 PKT" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:cubixWebsiteTestPackage.CubixWebsiteTestCases@64e1dd11]" started-at="2024-07-26T15:04:34 PKT" name="CloseChrome" finished-at="2024-07-26T15:04:35 PKT" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseChrome -->

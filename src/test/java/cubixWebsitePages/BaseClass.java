@@ -322,6 +322,14 @@ public class BaseClass {
 		//js.executeScript("arguments[0].scrollIntoView(true);", element);
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight * 2 / 3);");
 	}
+	
+	public String getTextElement(WebElement elements, String locator) {
+		String element;
+		elements = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
+		element = elements.getText();
+		return element;
+		
+	}
 
 	public void deleteOldScreenshots() {
 		String screenshotsDirPath = System.getProperty("user.dir") + "/Screenshots";
