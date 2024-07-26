@@ -56,7 +56,9 @@ public class XpathClass {
 	public final String CWBlogSearch = "//input[@id='default-search']";
 	public final String CWBlogSearchBtn = "//button[contains(text(),'Search')]";
 	public final String CWBlogSearchValue = "How Generative AI Can Help Build a Sustainable Future?";
-	public final String CWBlogSearchResult = "//h3[contains(text(),'How Generative AI Can Help Build a Sustainable Future?')]";
+	//public final String CWBlogSearchResult = "//h3[contains(text(),'How Generative AI Can Help Build a Sustainable Future?')]";
+	//public final String CWBlogSearchResult = "//h3[text()='How Generative AI Can Help Build a Sustainable Future?']";
+	public final String CWBlogSearchResult = "//a[@href='/blog/ai-can-help-build-a-sustainable-future/']";
 	public final String CWBlogSearchResultValue = "How Generative AI Can Help Build a Sustainable Future?";
 	public final String CWBlogFooter = "//p[contains(text(),'© 2024 Cubix. All Rights Reserved.')]";
 

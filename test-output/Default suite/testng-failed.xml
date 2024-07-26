@@ -6,7 +6,7 @@
       <class name="cubixWebsiteTestPackage.CubixWebsiteTestCases">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyCareerForm"/>
+          <include name="searchFunctionality"/>
           <include name="setup"/>
           <include name="CloseChrome"/>
           <include name="startChrome"/>
