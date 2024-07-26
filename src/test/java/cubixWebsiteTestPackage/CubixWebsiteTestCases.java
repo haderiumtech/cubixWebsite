@@ -106,31 +106,39 @@ public class CubixWebsiteTestCases {
 		base.verifyCurrentUrl(base.getUrl(), CWxpath.CWProjectThankYouUrl);
 
 	}
-	
+
 	@Test(priority = 4)
 	public void searchFunctionality() {
-		
+
 		test = extent.createTest("Blog search functionality");
 		base.gotoUrl(CWxpath.CWBlogUrl);
 		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
-		//base.waitUntilDisplayed(CWxpath.CWBlogSearch);
+		// base.waitUntilDisplayed(CWxpath.CWBlogSearch);
 		base.sendKeys(CWxpath.CWBlogSearch, CWxpath.CWBlogSearchValue);
-		
+
 		base.forClick(CWxpath.CWBlogSearchBtn);
-		
-		//base.waitUntilDisplayed(CWxpath.CWBlogFooter);
+
+		// base.waitUntilDisplayed(CWxpath.CWBlogFooter);
 		base.scrollToPageEnd();
 		base.scrollToElement(CWxpath.CWBlogSearchResult);
 		base.verifyText(base.getText(CWxpath.CWBlogSearchResult), CWxpath.CWBlogSearchResultValue);
-		
+
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void verifyCareerForm() {
 
 		test = extent.createTest("Career form submission");
 		// base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
+		base.gotoUrl(CWxpath.CWCareerPage);
+		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
 		base.forClick(CWxpath.CWApplyNowCareer);
+		base.sendKeys(CWxpath.CWCareername, CWxpath.CWprojectnamevalue);
+		base.sendKeys(CWxpath.CWCareerEmail, CWxpath.CWprojectemailvalue);
+		base.sendKeys(CWxpath.CWCareerNumber, CWxpath.CWprojectnumbervalue);
+		base.sendKeys(CWxpath.CWCareerDescription, CWxpath.CWprojectdescriptionvalue);
+		base.sendKeys(CWxpath.CWCareerResume, CWxpath.CWTestFilePath);
+		base.forClick(CWxpath.CWCareerSend);
 
 	}
 

@@ -42,15 +42,14 @@ public class XpathClass {
 
 	// career page xpaths
 	public final String CWCareerPage = "https://www.cubix.co/careers/";
-
 	public final String CWApplyNowCareer = "//button/span[contains(text(),'Apply Now')]";
-
 	public final String CWCareername = "//input[@id='name']";
 	public final String CWCareerEmail = "//input[@id='email']";
 	public final String CWCareerNumber = "//input[@id='number']";
-	public final String CWCareerDescription = "//textarea[@id='description']";
-	public final String CWCareerResume = "//textarea[@id='description']";
+	public final String CWCareerDescription = "//textarea[@id='message']";
+	public final String CWCareerResume = "//input[@id='resume']";
 	public final String CWCareerSend = "//button[contains(text(),'Send Message')]";
+	public final String CWTestFilePath = System.getProperty("user.dir") + "/src/test/resources/TestDocument.pdf";
 
 	// Blog page
 	public final String CWBlogUrl = "https://www.cubix.co/blog/";
