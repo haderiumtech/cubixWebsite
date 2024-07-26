@@ -2,7 +2,7 @@
 <suite name="Test Suite">
     <test name="Test">
         <classes>
-            <class name="computingWorldTestPackage.ComputingWorldTestCases"/>
+            <class name="cubixWebsiteTestPackage.CubixWebsiteTestCases"/>
         </classes>
     </test>
 </suite>
