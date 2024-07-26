@@ -315,7 +315,7 @@ public class BaseClass {
 
 	public void scrollToPageEnd() {
 		long pageHeight = (Long) js.executeScript("return document.body.scrollHeight");
-		long scrollAmount = 10; // Adjust this value to control scroll speed
+		long scrollAmount = 30; // Adjust this value to control scroll speed
 		long currentPosition = 0;
 
 		while (currentPosition < pageHeight) {
@@ -329,24 +329,43 @@ public class BaseClass {
 		}
 	}
 
-	public void scrollToElement(String locator) {
-		WebElement element = driver.findElement(By.xpath(locator));
-		int elementPosition = element.getLocation().getY();
-		long currentPosition = 0;
-		long scrollAmount = 50; // Adjust this value to control scroll speed
+	public void scrollToMid() {
+		 // Get the height of the viewport and the total page height
+        long viewportHeight = (Long) js.executeScript("return window.innerHeight");
+        long pageHeight = (Long) js.executeScript("return document.body.scrollHeight");
 
-		while (currentPosition < elementPosition) {
-			js.executeScript("window.scrollBy(0, arguments[0]);", scrollAmount);
-			currentPosition += scrollAmount;
-			try {
-				Thread.sleep(50); // Adjust this value to control scroll delay
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+        // Calculate the middle position of the page
+        long middlePosition = (pageHeight - viewportHeight) / 2;
 
-		// Ensure the element is fully in view
-		js.executeScript("arguments[0].scrollIntoView(true);", element);
+        // Calculate the bottom position of the page
+        long bottomPosition = pageHeight - viewportHeight;
+
+        // Scroll from the bottom to the middle
+        long currentPosition = bottomPosition;
+
+        while (currentPosition > middlePosition) {
+            // Calculate the distance to scroll in this step
+            long distance = Math.min(30, currentPosition - middlePosition);
+
+            // Scroll by the calculated distance
+            js.executeScript("window.scrollBy(0, -arguments[0]);", distance);
+
+            // Update the current position
+            currentPosition -= distance;
+
+            try {
+                Thread.sleep(50); // Adjust this value to control scroll delay
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        // Optionally, add a delay to see the final position
+        try {
+            Thread.sleep(1000); // 1 second delay
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 	}
 	
 	public String getTextElement(WebElement elements, String locator) {

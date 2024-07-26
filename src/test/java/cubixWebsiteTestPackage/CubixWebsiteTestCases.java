@@ -113,26 +113,14 @@ public class CubixWebsiteTestCases {
 		test = extent.createTest("Blog search functionality");
 		base.gotoUrl(CWxpath.CWBlogUrl);
 		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
-		// base.waitUntilDisplayed(CWxpath.CWBlogSearch);
 		base.sendKeys(CWxpath.CWBlogSearch, CWxpath.CWBlogSearchValue);
 		base.forClick(CWxpath.CWBlogSearchBtn);
-<<<<<<< HEAD
-
-		// base.waitUntilDisplayed(CWxpath.CWBlogFooter);
 		base.scrollToPageEnd();
-		base.scrollToElement();
-		Thread.sleep(5000);
-		base.waitUntilDisplayed(CWxpath.CWBlogSearchResult);
-		base.verifyText(base.getTextElement(base.findElement(CWxpath.CWBlogSearchResult),CWxpath.CWBlogSearchResult), CWxpath.CWBlogSearchResultValue);
-=======
-		base.waitUntilDisplayed(CWxpath.CWBlogSearchResult);
-		base.scrollToPageEnd();
-		// base.scrollToElement(CWxpath.CWBlogSearchBtn);
-		Thread.sleep(9000);
+		base.scrollToMid();
 		base.waitUntilDisplayed(CWxpath.CWBlogSearchResult);
 		System.out.print("+++++++++++++++++++>>" + base.getText(CWxpath.CWBlogSearchResult) + "<<+++++++++++++++++++");
 		base.verifyText(base.getText(CWxpath.CWBlogSearchResult), CWxpath.CWBlogSearchResultValue);
->>>>>>> 222b0a554692513df89506afb49e7f259589d714
+
 
 	}
 
