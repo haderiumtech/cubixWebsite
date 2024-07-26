@@ -69,7 +69,6 @@ public class CubixWebsiteTestCases {
 
 		test = extent.createTest("Assert Homepage");
 		base.verifyText(CWxpath.HomePageTitle, base.getTitle());
-
 	}
 
 	@Test(priority = 2)
@@ -82,9 +81,7 @@ public class CubixWebsiteTestCases {
 		base.sendKeys(CWxpath.CWcontactemail, CWxpath.CWcontactemailvalue);
 		base.sendKeys(CWxpath.CWcontactnumber, CWxpath.CWcontactnumbervalue);
 		base.sendKeys(CWxpath.CWcontactmessage, CWxpath.CWcontactmessagevalue);
-
 		base.forClick(CWxpath.CWcontactSubmitBtn);
-
 		base.verifyText(base.getText(CWxpath.CWThankyouPage), CWxpath.CWThankyouPageValue);
 		base.verifyCurrentUrl(base.getUrl(), CWxpath.CWProjectThankYouUrl);
 
@@ -93,7 +90,7 @@ public class CubixWebsiteTestCases {
 	@Test(priority = 3)
 	public void verifyProjectForm() {
 
-		test = extent.createTest("Got a project form submission");
+		test = extent.createTest("Got a project form submission button");
 		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
 		base.forClick(CWxpath.CWproject);
 		base.sendKeys(CWxpath.CWprojectname, CWxpath.CWprojectnamevalue);
@@ -118,9 +115,7 @@ public class CubixWebsiteTestCases {
 		base.scrollToPageEnd();
 		base.scrollToMid();
 		base.waitUntilDisplayed(CWxpath.CWBlogSearchResult);
-		System.out.print("+++++++++++++++++++>>" + base.getText(CWxpath.CWBlogSearchResult) + "<<+++++++++++++++++++");
 		base.verifyText(base.getText(CWxpath.CWBlogSearchResult), CWxpath.CWBlogSearchResultValue);
-
 
 	}
 
@@ -128,7 +123,6 @@ public class CubixWebsiteTestCases {
 	public void verifyCareerForm() {
 
 		test = extent.createTest("Career form submission");
-		// base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
 		base.gotoUrl(CWxpath.CWCareerPage);
 		base.waitUntilDisplayed(CWxpath.CWCookieAcceptBtn);
 		base.forClick(CWxpath.CWApplyNowCareer);
@@ -138,6 +132,16 @@ public class CubixWebsiteTestCases {
 		base.sendKeys(CWxpath.CWCareerDescription, CWxpath.CWprojectdescriptionvalue);
 		base.sendKeys(CWxpath.CWCareerResume, CWxpath.CWTestFilePath);
 		base.forClick(CWxpath.CWCareerSend);
+
+	}
+
+	@Test(priority = 6)
+	public void verifyBlogPost() {
+
+		test = extent.createTest("Assert blog post page URL");
+		base.gotoUrl(CWxpath.CWBlogPostUrl);
+		base.verifyCurrentUrl(base.getUrl(), CWxpath.CWBlogPostUrl);
+		base.verifyText(base.getTitle(), CWxpath.CWPostTitle);
 
 	}
 

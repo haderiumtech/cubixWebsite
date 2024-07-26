@@ -315,7 +315,7 @@ public class BaseClass {
 
 	public void scrollToPageEnd() {
 		long pageHeight = (Long) js.executeScript("return document.body.scrollHeight");
-		long scrollAmount = 30; // Adjust this value to control scroll speed
+		long scrollAmount = 50; // Adjust this value to control scroll speed
 		long currentPosition = 0;
 
 		while (currentPosition < pageHeight) {
@@ -330,50 +330,47 @@ public class BaseClass {
 	}
 
 	public void scrollToMid() {
-		 // Get the height of the viewport and the total page height
-        long viewportHeight = (Long) js.executeScript("return window.innerHeight");
-        long pageHeight = (Long) js.executeScript("return document.body.scrollHeight");
+		// Get the height of the viewport and the total page height
+		long viewportHeight = (Long) js.executeScript("return window.innerHeight");
+		long pageHeight = (Long) js.executeScript("return document.body.scrollHeight");
 
-        // Calculate the middle position of the page
-        long middlePosition = (pageHeight - viewportHeight) / 2;
+		// Calculate the middle position of the page
+		long middlePosition = (pageHeight - viewportHeight) / 2;
 
-        // Calculate the bottom position of the page
-        long bottomPosition = pageHeight - viewportHeight;
+		// Calculate the bottom position of the page
+		long bottomPosition = pageHeight - viewportHeight;
 
-        // Scroll from the bottom to the middle
-        long currentPosition = bottomPosition;
+		// Scroll from the bottom to the middle
+		long currentPosition = bottomPosition;
 
-        while (currentPosition > middlePosition) {
-            // Calculate the distance to scroll in this step
-            long distance = Math.min(30, currentPosition - middlePosition);
+		while (currentPosition > middlePosition) {
+			// Calculate the distance to scroll in this step
+			long distance = Math.min(30, currentPosition - middlePosition);
+			// Scroll by the calculated distance
+			js.executeScript("window.scrollBy(0, -arguments[0]);", distance);
 
-            // Scroll by the calculated distance
-            js.executeScript("window.scrollBy(0, -arguments[0]);", distance);
-
-            // Update the current position
-            currentPosition -= distance;
-
-            try {
-                Thread.sleep(50); // Adjust this value to control scroll delay
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        // Optionally, add a delay to see the final position
-        try {
-            Thread.sleep(1000); // 1 second delay
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+			// Update the current position
+			currentPosition -= distance;
+			try {
+				Thread.sleep(50); // Adjust this value to control scroll delay
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		// Optionally, add a delay to see the final position
+		try {
+			Thread.sleep(1000); // 1 second delay
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
-	
+
 	public String getTextElement(WebElement elements, String locator) {
 		String element;
 		elements = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 		element = elements.getText();
 		return element;
-		
+
 	}
 
 	public void deleteOldScreenshots() {
