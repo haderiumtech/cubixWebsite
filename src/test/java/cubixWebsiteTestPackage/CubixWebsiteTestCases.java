@@ -45,7 +45,7 @@ public class CubixWebsiteTestCases {
 	public void CloseChrome() {
 
 		try {
-			// base.CloseBrowser();
+			base.CloseBrowser();
 			base.closeExtentReports();
 
 		} catch (Exception e) {
@@ -116,10 +116,12 @@ public class CubixWebsiteTestCases {
 		// base.waitUntilDisplayed(CWxpath.CWBlogSearch);
 		base.sendKeys(CWxpath.CWBlogSearch, CWxpath.CWBlogSearchValue);
 		base.forClick(CWxpath.CWBlogSearchBtn);
-		// base.waitUntilDisplayed(CWxpath.CWBlogFooter);
-		base.scrollToPageEnd();
-		base.scrollToElement();
 		base.waitUntilDisplayed(CWxpath.CWBlogSearchResult);
+		base.scrollToPageEnd();
+		// base.scrollToElement(CWxpath.CWBlogSearchBtn);
+		Thread.sleep(9000);
+		base.waitUntilDisplayed(CWxpath.CWBlogSearchResult);
+		System.out.print("+++++++++++++++++++>>" + base.getText(CWxpath.CWBlogSearchResult) + "<<+++++++++++++++++++");
 		base.verifyText(base.getText(CWxpath.CWBlogSearchResult), CWxpath.CWBlogSearchResultValue);
 
 	}

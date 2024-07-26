@@ -6,8 +6,8 @@
       <class name="cubixWebsiteTestPackage.CubixWebsiteTestCases">
         <methods>
           <include name="tearDown"/>
-          <include name="searchFunctionality"/>
           <include name="setup"/>
+          <include name="searchFunctionality"/>
           <include name="CloseChrome"/>
           <include name="startChrome"/>
         </methods>

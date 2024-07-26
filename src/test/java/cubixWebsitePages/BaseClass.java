@@ -64,7 +64,7 @@ public class BaseClass {
 
 	private void initializeDriver() {
 		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--headless");
+		// options.addArguments("--headless");
 		options.addArguments("--disable-notifications");
 		// arrugmentt call for allowing web pplication chrome update
 		options.addArguments("--remote-allow-origins=*");
@@ -312,15 +312,41 @@ public class BaseClass {
 		Select dropdown = new Select(dropdownElement);
 		dropdown.selectByIndex(index);
 	}
-	
-	public void scrollToPageEnd() { 
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+
+	public void scrollToPageEnd() {
+		long pageHeight = (Long) js.executeScript("return document.body.scrollHeight");
+		long scrollAmount = 10; // Adjust this value to control scroll speed
+		long currentPosition = 0;
+
+		while (currentPosition < pageHeight) {
+			js.executeScript("window.scrollBy(0, arguments[0]);", scrollAmount);
+			currentPosition += scrollAmount;
+			try {
+				Thread.sleep(50); // Adjust this value to control scroll delay
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
 	}
-	
-	public void scrollToElement() {
-		//WebElement element = driver.findElement(By.xpath(locator));
-		//js.executeScript("arguments[0].scrollIntoView(true);", element);
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight * 2 / 3);");
+
+	public void scrollToElement(String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		int elementPosition = element.getLocation().getY();
+		long currentPosition = 0;
+		long scrollAmount = 50; // Adjust this value to control scroll speed
+
+		while (currentPosition < elementPosition) {
+			js.executeScript("window.scrollBy(0, arguments[0]);", scrollAmount);
+			currentPosition += scrollAmount;
+			try {
+				Thread.sleep(50); // Adjust this value to control scroll delay
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+		// Ensure the element is fully in view
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
 	public void deleteOldScreenshots() {
