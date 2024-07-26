@@ -32,8 +32,10 @@ public class CubixWebsiteTestCases {
 
 		try {
 			base.deleteOldScreenshots(); // Add this line to delete old screenshots
+			base.deleteContentsExceptReports(); //
 			base.setExtend();
 			extent = base.extent;
+			
 
 		} catch (Exception e) {
 			System.err.println("Error during setup: " + e.getMessage());

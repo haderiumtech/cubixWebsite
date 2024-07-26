@@ -59,5 +59,6 @@ public class XpathClass {
 	public final String CWBlogSearchResult = "//*[@id='recent-blogs']//article/h3[contains(text(),'How Generative AI Can Help Build a Sustainable Future?')]";
 	public final String CWBlogSearchResultValue = "How Generative AI Can Help Build a Sustainable Future?";
 
+	
 
 }

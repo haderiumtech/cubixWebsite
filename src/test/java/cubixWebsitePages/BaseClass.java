@@ -64,7 +64,7 @@ public class BaseClass {
 
 	private void initializeDriver() {
 		ChromeOptions options = new ChromeOptions();
-		// options.addArguments("--headless");
+		options.addArguments("--headless");
 		options.addArguments("--disable-notifications");
 		// arrugmentt call for allowing web pplication chrome update
 		options.addArguments("--remote-allow-origins=*");
@@ -400,4 +400,29 @@ public class BaseClass {
 			}
 		}
 	}
+	
+	
+	public void deleteContentsExceptReports() {
+		String folderPath = System.getProperty("user.dir") + "/test-output";
+	    File folder = new File(folderPath);
+        if (folder.isDirectory()) {
+            for (File file : folder.listFiles()) {
+                if (file.isDirectory() && file.getName().equals("Reports")) {
+                    // Do not delete the Reports folder
+                    continue;
+                }
+                deleteRecursively(file);
+            }
+        }
+    }
+	
+	private void deleteRecursively(File file) {
+        if (file.isDirectory()) {
+            for (File subFile : file.listFiles()) {
+                deleteRecursively(subFile);
+            }
+        }
+        file.delete();
+    }
+	
 }
